@@ -1,0 +1,72 @@
+<html>
+
+	<head>
+		<link type="text/css" rel="stylesheet" href="style/style.css" />
+	</head>
+	
+	<body>
+	
+		<div id="navigation">
+			
+			<a href="https://accounts.google.com/SignOutOptions?hl=en&continue=https://www.google.co.in/webhp%3Fhl%3Den"><img src="img/photo.jpg"/></a>
+			<div id="not"><a href="https://www.google.co.in/intl/en/options/"><center><img src="img/notification.png"/></center></a></div>
+			<a href="https://www.google.co.in/intl/en/about/products/"><div id="tab">
+			<table cellspacing="4">
+				<tr><td></td><td></td><td></td></tr>
+				<tr><td></td><td></td><td></td></tr>
+				<tr><td></td><td></td><td></td></tr>
+			</table>
+			</div></a>
+			<a href="https://www.google.co.in/imghp?hl=en&tab=wi&ei=HX7IVqbmI4GU0QS5gbOoAQ&ved=0EKouCBYoAQ"><div id="images">Images</div></a>
+			<a href="https://mail.google.com/mail/?tab=wm"><div id="gmail">Gmail</div></a>
+			<a><div id="name">Shivam</div></a>
+			
+		</div>
+	
+		<div id="blank1"></div>
+		
+		<div id="logo"><img src="img/google.png"/></div>
+		
+		<div id="mic">
+		<textarea id="tt"></textarea>
+		<img src="img/mic.png" id="imim"/>
+		</div>
+		
+		<div style="clear:both;"></div>
+		<div id="buttons" align="center">
+			<button id="but1" align="center"><b>Google Search</b></button>
+			<button id="but2" align="center"><b>I'm Feeling Lucky</b></button>
+		</div>
+		
+		<div id="footer">
+			<a href="https://www.google.co.in/intl/en/ads/?fg=1"><div id="ad">Advertising</div></a>
+			<a href="https://www.google.co.in/services/?fg=1"><div id="bu">Business</div></a>
+			<a href="https://www.google.co.in/intl/en/about.html?fg=1"><div id="ab">About</div></a>
+
+			<a href="https://www.google.co.in/preferences?hl=en"><div id="se">Settings</div></a>
+			<a href="https://www.google.co.in/intl/en/policies/terms/?fg=1"><div id="te">Terms</div></a>
+			<a href="https://www.google.co.in/intl/en/policies/privacy/?fg=1"><div id="pr">Privacy</div></a>
+		</div>
+		
+		<script>
+			document.getElementById("tt").addEventListener("click", whatClicked, false);
+			
+			function whatClicked(evt) {
+				document.getElementById("mic").style.borderColor = "blue";
+			}
+			
+			function whatNotClicked(evt) {
+				document.getElementById("mic").style.borderColor = "rgb(246,246,246)";
+			}
+			
+			document.getElementById("navigation").addEventListener("click", whatNotClicked, false);
+			document.getElementById("blank1").addEventListener("click", whatNotClicked, false);
+			document.getElementById("logo").addEventListener("click", whatNotClicked, false);
+			document.getElementById("buttons").addEventListener("click", whatNotClicked, false);			
+			document.getElementById("footer").addEventListener("click", whatNotClicked, false);	
+		</script>
+		
+		
+	</body>
+	
+</html>
